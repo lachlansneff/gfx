@@ -68,6 +68,7 @@ impl PrivateCapabilities {
             f::Rgba32Uint => RGBA32Uint,
             f::Rgba32Sint => RGBA32Sint,
             f::Rgba32Sfloat => RGBA32Float,
+            f::S8Uint => Stencil8,
             f::Bc1RgbaUnorm if self.format_bc => BC1_RGBA,
             f::Bc1RgbaSrgb if self.format_bc => BC1_RGBA_sRGB,
             f::Bc1RgbUnorm if self.format_bc => BC1_RGBA, //TODO?
